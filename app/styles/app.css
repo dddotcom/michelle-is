@@ -9,7 +9,7 @@
   max-width: 80%;
   font-size: 15px;
   margin: 1.25em auto 0em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron h1 {
@@ -19,7 +19,7 @@
 
 .jumbotron h4 {
   color: gray;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .homepage {
@@ -29,7 +29,7 @@
 }
 
 .homenav {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar + .jumbotron {
@@ -53,4 +53,12 @@
 
 .icon-color:hover {
   color: red;
+}
+
+.padded-row{
+  padding-top:50px;
+}
+
+li > a, .icon {
+ transition: color 0.4s ease;
 }
