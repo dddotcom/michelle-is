@@ -47,8 +47,8 @@
 }
 
 .icon {
-  margin-left: 35px;
-  margin-top:90px;
+  /*margin-left: 35px;*/
+  /*margin-top:90px;*/
 }
 
 .icon-color:hover {
@@ -61,4 +61,15 @@
 
 li > a, .icon {
  transition: color 0.4s ease;
+}
+
+.icons-group .col-xs-3 {
+    padding: 4px 3em 4px 3em;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For phones: */
+    .icons-group .col-xs-3 {
+        padding: 1px 0.5em 1px 0.5em;
+    }
 }
