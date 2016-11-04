@@ -50,12 +50,6 @@
 
 .icon-color {
   color: gray;
-  /*margin-top: -2px;*/
-}
-
-.icon {
-  /*margin-left: 35px;*/
-  /*margin-top:90px;*/
 }
 
 .icon-color:hover {
@@ -85,13 +79,6 @@ li > a, .icon {
 .img-hover img:hover {
 	-webkit-filter: grayscale(50%) blur(2px);
   filter: grayscale(50%) blur(2px);
-}
-
-@media only screen and (max-width: 768px) {
-    /* For phones: */
-    .icons-group .col-xs-3 {
-        padding: 1px 0.5em 1px 0.5em;
-    }
 }
 
 /*sticky footer*/
@@ -128,4 +115,23 @@ body:before {
   float: left;
   width: 0;
   margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+
+/*media queries*/
+
+/* For tablets and phones: */
+@media only screen and (max-width: 768px) {
+
+    .icons-group .col-xs-3 {
+        padding: 1px 0.5em 1px 0.5em;
+    }
+    /*remove the fade*/
+    .img-hover img {
+    	-webkit-filter: grayscale(0) blur(0);
+    	filter: grayscale(0) blur(0);
+    }
+    .img-hover img:hover {
+      -webkit-filter: grayscale(0) blur(0);
+    	filter: grayscale(0) blur(0);
+    }
 }
