@@ -56,7 +56,7 @@ ember github-pages:commit --message "<message goes here>"
 
 more info on ember-cli-github-pages is [here](https://github.com/poetic/ember-cli-github-pages#usage )
 
-# How to set up an .is custom domain with Github pages
+# How to set up a .is custom domain with Github pages
 
 ## Prerequisites
 * ownership of a .is domain registered under ISNIC

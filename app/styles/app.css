@@ -74,6 +74,19 @@ li > a, .icon {
     padding: 4px 3em 4px 3em;
 }
 
+/* Blur + Gray Scale */
+/*https://codepen.io/nxworld/pen/ZYNOBZ*/
+.img-hover img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-hover img:hover {
+	-webkit-filter: grayscale(50%) blur(2px);
+  filter: grayscale(50%) blur(2px);
+}
+
 @media only screen and (max-width: 768px) {
     /* For phones: */
     .icons-group .col-xs-3 {
