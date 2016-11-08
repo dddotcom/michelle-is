@@ -121,7 +121,6 @@ body:before {
 
 /* For tablets and phones: */
 @media only screen and (max-width: 768px) {
-
     .icons-group .col-xs-3 {
         padding: 1px 0.5em 1px 0.5em;
     }
@@ -134,4 +133,13 @@ body:before {
       -webkit-filter: grayscale(0) blur(0);
     	filter: grayscale(0) blur(0);
     }
+    .jumbotron p {
+      text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 491px) {
+  .homepage small {
+    display: block;
+  }
 }
