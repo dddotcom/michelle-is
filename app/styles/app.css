@@ -1,20 +1,24 @@
 .jumbotron {
   background: white;
   color: white;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .jumbotron p {
   color: gray;
   max-width: 80%;
-  font-size: 15px;
-  margin: 1.25em auto 0em;
+  font-size: 10.5px;
+  margin: 1.0em auto 1.0em;
+  text-align: start;
   font-family: 'Raleway', sans-serif;
+  padding-left: -10px;
 }
 
 .jumbotron h1 {
   color: black;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 .jumbotron h4 {
@@ -31,8 +35,6 @@
 
 .homepage {
   font-family: 'Poiret One', cursive;
-  font-size: 40px;
-  font-weight:bold;
 }
 
 .homenav {
@@ -64,8 +66,8 @@ li > a, .icon {
  transition: color 0.4s ease;
 }
 
-.icons-group .col-xs-3 {
-    padding: 4px 3em 4px 3em;
+.icons-group{
+    padding: 20px 0em 0px 1em;
 }
 
 /* Blur + Gray Scale */
@@ -90,6 +92,10 @@ li > a, .icon {
 
 html, body {
   height: 100%;
+}
+
+.main-image {
+  width: 100%;
 }
 
 #wrap {
@@ -118,10 +124,21 @@ body:before {
 }
 
 /*media queries*/
+@media only screen and (max-width: 1199px) {
+  .jumbotron h1 {
+    padding-top: 0px;
+    text-align: center;
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  .jumbotron h1 {
+    font-size:40px;
+  }
+}
 /* For tablets and phones: */
-@media only screen and (max-width: 768px) {
-    .icons-group .col-xs-3 {
+media only screen and (max-width: 768px) {
+    .icons-group .col-xs-4 {
         padding: 1px 0.5em 1px 0.5em;
     }
     /*remove the fade*/
@@ -142,4 +159,9 @@ body:before {
   .homepage small {
     display: block;
   }
+
+  @media only screen and (max-width: 387px) {
+    .jumbotron h1 {
+      font-size: 25px;
+    }
 }
