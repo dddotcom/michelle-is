@@ -9,7 +9,8 @@
   max-width: 80%;
   font-size: 10.5px;
   margin: 1.0em auto 1.0em;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   padding-left: -10px;
 }
 
@@ -20,20 +21,17 @@
   padding-left: 10px;
 }
 
-.jumbotron h4 {
-  color: gray;
-  font-family: 'Raleway', sans-serif;
-}
-
 .footer p {
   font-size: 0.8em;
-  font-family: 'Poiret One', cursive;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight:bold;
   color: gray;
 }
 
 .homepage {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Megrim', cursive;
+  /*font-family: 'Poiret One', cursive;*/
 }
 
 .homenav {
@@ -62,7 +60,7 @@
 }
 
 li > a, .icon {
- transition: color 0.4s ease;
+ transition: color 0.8s ease;
 }
 
 .icons-group{
@@ -71,15 +69,23 @@ li > a, .icon {
 
 /* Blur + Gray Scale */
 /*https://codepen.io/nxworld/pen/ZYNOBZ*/
-.img-hover img {
+.img-hover img:hover {
 	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .8s ease-in-out;
+	transition: .8s ease-in-out;
 }
-.img-hover img:hover {
-	-webkit-filter: grayscale(50%) blur(2px);
-  filter: grayscale(50%) blur(2px);
+.img-hover img {
+	-webkit-filter: grayscale(100%) blur(1.5px);
+  filter: grayscale(100%) blur(1.5px);
+}
+
+.img-hover .col-xs-6:nth-child(even) {
+    padding-left: 0px;
+}
+
+.img-hover .col-xs-6:nth-child(odd) {
+    padding-right: 0px;
 }
 
 /*sticky footer*/
@@ -128,6 +134,9 @@ body:before {
     padding-top: 0px;
     text-align: center;
   }
+  .jumbotron p {
+    text-align: justify;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -136,7 +145,7 @@ body:before {
   }
 }
 /* For tablets and phones: */
-media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .icons-group .col-xs-4 {
         padding: 1px 0.5em 1px 0.5em;
     }
@@ -148,9 +157,6 @@ media only screen and (max-width: 768px) {
     .img-hover img:hover {
       -webkit-filter: grayscale(0) blur(0);
     	filter: grayscale(0) blur(0);
-    }
-    .jumbotron p {
-      text-align: justify;
     }
 }
 
