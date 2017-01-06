@@ -181,6 +181,21 @@ body:before {
       -webkit-filter: grayscale(0) blur(0);
     	filter: grayscale(0) blur(0);
     }
+
+    /*remove color transition for icons*/
+    .icon-color:hover {
+      color: gray;
+    }
+    li > a, .icon {
+     transition: none !important;
+    }
+
+    .signature-icon-color:hover {
+      color: gray;
+    }
+    li > a, .signature-icon {
+     transition: none !important;
+    }
 }
 
 @media only screen and (max-width: 491px) {
